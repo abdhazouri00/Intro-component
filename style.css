@@ -134,7 +134,7 @@ footer {
 .firstname input{
 
     height: 50px;
-    width: 450px;
+    width: 30vw;
     margin-top: 30px;
     text-indent: 25px;
     font-family: 'Poppins', sans-serif;
@@ -185,7 +185,7 @@ footer {
 .lastname input{
 
     height: 50px;
-    width: 450px;
+    width: 30vw;
     margin-top: 30px;
     text-indent: 25px;
     font-family: 'Poppins', sans-serif;
@@ -207,7 +207,7 @@ footer {
 .Email input{
 
     height: 50px;
-    width: 450px;
+    width: 30vw;
     margin-top: 30px;
     text-indent: 25px;
     font-family: 'Poppins', sans-serif;
@@ -243,7 +243,7 @@ footer {
 .password input{
 
     height: 50px;
-    width: 450px;
+    width: 30vw;
     margin-top: 30px;
     text-indent: 25px;
     font-family: 'Poppins', sans-serif;
@@ -274,7 +274,7 @@ footer {
 .button{
 
     height: 50px;
-    width: 450px;
+    width: 30vw;
     margin-top: 30px;
     background-color: var(--Green);
     color: white;
@@ -351,7 +351,8 @@ footer {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 979px) {
+    
     .hero {
       height: auto;
       width: 90vw;
@@ -368,7 +369,10 @@ footer {
     .leftHeader,
     .leftText {
       margin-left: 0;
+      width: 100vw;
       text-align: center;
+      max-width: 86vw;
+      overflow: hidden;
     }
   
     .right {
