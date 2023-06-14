@@ -1,0 +1,410 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    /*accent*/
+    --Blue: hsl(248, 32%, 49%);
+
+    /*neutral*/
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+/*font-family: 'Poppins', sans-serif;*/
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg-intro-desktop.png);
+    background-color: var(--Red);
+}
+
+.hero{
+
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 10vh;
+}
+
+.left{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 35vw;
+    left: 20px;
+    top: 25vh;
+}
+
+.leftHeader{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.leftText{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 30px
+}
+
+
+
+.right{
+
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-left: auto;
+    position: relative;
+    top: 12vh;
+    right: 80px;
+    height: 60vh;
+}
+
+.topText{
+
+    height: 60px;
+    background-color: var(--Blue);
+    width: 35vw;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    padding-bottom: 10px;
+    padding-top: 7px;
+    }
+
+.topText p{
+
+    margin-top: 8px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.span{
+
+    font-weight: bold;
+}
+
+.container{
+
+    background-color: white;
+    height: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+    padding-bottom: -10px;
+}
+
+.firstname{
+
+    position: relative;
+}
+
+.firstname input{
+
+    height: 50px;
+    width: 450px;
+    margin-top: 30px;
+    text-indent: 25px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.firstname input::placeholder{
+
+    color: rgb(84, 83, 83);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    opacity: 85%;
+}
+
+.firstname::after {
+
+    display: none;
+    content: "";
+    background-image: url('images/icon-error.svg');
+    background-size: cover;
+    position: absolute;
+    top: 66.5%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+}
+
+.lastname{
+
+    position:relative;
+}
+
+.lastname::after {
+    
+    display: none;
+    content: "";
+    background-image: url('images/icon-error.svg');
+    background-size: cover;
+    position: absolute;
+    top: 66.5%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+}
+
+.lastname input{
+
+    height: 50px;
+    width: 450px;
+    margin-top: 30px;
+    text-indent: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lastname input::placeholder{
+
+    color: rgb(84, 83, 83);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    opacity: 85%;
+}
+
+.Email{
+
+    position: relative;
+}
+
+.Email input{
+
+    height: 50px;
+    width: 450px;
+    margin-top: 30px;
+    text-indent: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Email input::placeholder{
+
+    color: rgb(84, 83, 83);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    opacity: 85%;
+}
+
+.Email::after {
+
+    display: none;
+    content: "";
+    background-image: url('images/icon-error.svg');
+    background-size: cover;
+    position: absolute;
+    top: 66.5%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+}
+
+.password{
+
+    position: relative;
+}
+
+.password input{
+
+    height: 50px;
+    width: 450px;
+    margin-top: 30px;
+    text-indent: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.password input::placeholder{
+
+    color: rgb(84, 83, 83);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    opacity: 85%;
+}
+
+.password::after {
+
+    display: none;
+    content: "";
+    background-image: url('images/icon-error.svg');
+    background-size: cover;
+    position: absolute;
+    top: 66.5%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+}
+
+.button{
+
+    height: 50px;
+    width: 450px;
+    margin-top: 30px;
+    background-color: var(--Green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.35);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.minitext{
+
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.span2{
+
+    color: red;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.errorTextf{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 270px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: -12px;
+    display: none;
+}
+.errorTextl{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 270px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: -12px;
+    display: none;
+}
+.errorTexte{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 270px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: -12px;
+    display: none;
+}
+.errorTextp{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 270px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: -12px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hero {
+      height: auto;
+      width: 90vw;
+      position: static;
+    }
+  
+    .left {
+      width: 100%;
+      position: static;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  
+    .leftHeader,
+    .leftText {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .right {
+      width: 90vw;
+      margin: 0 auto;
+      position: static;
+      top: auto;
+      right: auto;
+    }
+
+    .topText{
+
+        width: inherit;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .topText p{
+
+        margin-top: 20px;
+    }
+  
+    .container {
+      height: auto;
+      margin-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  
+    .firstname input,
+    .lastname input,
+    .Email input,
+    .password input,
+    .button {
+      width: 80vw;
+    }
+  
+    .errorTextf,
+    .errorTextl,
+    .errorTexte,
+    .errorTextp {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  
